@@ -1,0 +1,34 @@
+---
+// src/components/Formulario.astro
+---
+<section class="py-24 px-6 bg-primary/5">
+    <div class="max-w-4xl mx-auto glass-card rounded-3xl p-10 md:p-16 border-2 border-primary/20 relative">
+        <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white shadow-2xl">
+            <span class="material-symbols-outlined text-4xl">rocket_launch</span>
+        </div>
+        <div class="text-center space-y-4 mb-12">
+            <h2 class="text-4xl md:text-5xl font-black tracking-tight">¿YA ESTÁS LISTO?</h2>
+            <p class="text-slate-400 text-lg italic">Completa el cuestionario y aplica para tu diagnóstico estratégico gratuito</p>
+        </div>
+        <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                    <label class="text-sm font-bold uppercase tracking-wider text-slate-400 ml-1">Nombre Completo</label>
+                    <input class="w-full bg-slate-900/50 border-slate-700 rounded-xl px-6 py-4 focus:border-primary focus:ring-primary text-white placeholder:text-slate-600" placeholder="Tu nombre aquí..." type="text"/>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-bold uppercase tracking-wider text-slate-400 ml-1">Email Corporativo</label>
+                    <input class="w-full bg-slate-900/50 border-slate-700 rounded-xl px-6 py-4 focus:border-primary focus:ring-primary text-white placeholder:text-slate-600" placeholder="email@tunegocio.com" type="email"/>
+                </div>
+            </div>
+            <div class="space-y-2">
+                <label class="text-sm font-bold uppercase tracking-wider text-slate-400 ml-1">¿Cuál es tu principal desafío actual?</label>
+                <textarea class="w-full bg-slate-900/50 border-slate-700 rounded-xl px-6 py-4 focus:border-primary focus:ring-primary text-white placeholder:text-slate-600" placeholder="Cuéntanos un poco sobre tu situación..." rows="3"></textarea>
+            </div>
+            <button class="w-full bg-primary py-6 rounded-xl font-black text-xl md:text-2xl tracking-tight shadow-[0_10px_40px_rgba(249,6,249,0.3)] hover:scale-[1.02] transition-all uppercase" type="submit">
+                CLIC AQUÍ - Quiero mi estrategia
+            </button>
+            <p class="text-center text-slate-500 text-sm">Cupos limitados por mes para garantizar la calidad del servicio.</p>
+        </form>
+    </div>
+</section>

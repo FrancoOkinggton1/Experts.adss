@@ -1,0 +1,45 @@
+---
+// src/components/Hero.astro
+---
+<section class="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden hero-gradient px-6 py-12">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center w-full">
+        
+        <div class="space-y-6 relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                Estrategia de Alto Rendimiento
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-black leading-tight tracking-tight">
+                No hacemos solo <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">publicidad.</span><br/>
+                Creamos sistemas de crecimiento rentable
+            </h1>
+            
+            <p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+                Soluciones profesionales e inteligentes para escalar tu negocio con estrategia real. Dejamos de lado los "likes" para enfocarnos en tu facturación.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                <button class="bg-primary text-white px-8 py-3.5 rounded-xl font-black text-base hover:shadow-[0_0_30px_rgba(249,6,249,0.4)] transition-all">
+                    QUIERO MI DIAGNÓSTICO
+                </button>
+                <button class="border border-slate-700 bg-slate-800/50 text-white px-8 py-3.5 rounded-xl font-bold hover:bg-slate-700 transition-all text-base">
+                    Nuestra Metodología
+                </button>
+            </div>
+        </div>
+
+        <div class="relative group mt-8 lg:mt-0">
+            <div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-3xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+            <img 
+                class="relative rounded-2xl border border-primary/20 grayscale hover:grayscale-0 transition-all duration-700 object-cover aspect-[4/5] max-h-[500px] w-full shadow-2xl mx-auto" 
+                data-alt="Dos fundadoras profesionales sonriendo" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmy41WMNp6hXrjz3YoZ09ZuC1fVLpiE97W1t6vD1rMcHR8-zQMIhOLnVDEYGtxnW7sCU-vX6271FmS1v0UYvUZleqY-5uhq2uLBrxr032WA5l2p87sRNUzdJ4iaUdcxhTH0h5Hoi6jgqn9VhMtH-Z7jsL8sX7Ewp0kewczAw8J2Ei9DEqkFBEC54m4Bjl3u9PfQoTm89TDifX9_YUjmdnC--2DyltO_NaevcKLaoSOMdnUlD5X5Ef-PajABeanjQWDgd-7TWIAO5U"
+            />
+        </div>
+
+    </div>
+</section>
